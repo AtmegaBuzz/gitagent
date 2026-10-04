@@ -116,8 +116,10 @@ export type { ToolDefinition, ToolMetadata } from "./tool-factory.js";
 export { CostTracker } from "./cost-tracker.js";
 export type { SessionCosts, ModelUsage } from "./cost-tracker.js";
 
-// Context compaction
+// Context compaction (GCMessage helpers + engine Compactor)
 export { estimateTokens, estimateMessageTokens, needsCompaction, truncateToolResults, messagesToText, buildCompactPrompt } from "./compact.js";
+export { Compactor, createTransformContext } from "./compactor.js";
+export type { CompactorOptions, CompactorStatus } from "./compactor.js";
 
 // Loader (escape hatch)
 export { loadAgent } from "./loader.js";
