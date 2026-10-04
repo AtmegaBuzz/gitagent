@@ -5,6 +5,7 @@ export { query, tool } from "./sdk.js";
 export type {
 	Query,
 	QueryOptions,
+	CompactionOptions,
 	LocalRepoOptions,
 	SandboxOptions,
 	GCMessage,
